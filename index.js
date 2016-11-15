@@ -1,7 +1,5 @@
-var io = require('socket.io')(3500);
-
+var io = require('socket.io')(process.env.PORT || 3500);
 var socket = io;
-
 
 io.on('connection', function (socket) {
   console.log('Connected');
