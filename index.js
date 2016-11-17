@@ -10,6 +10,12 @@ app.get('/', function (req, res) {
 
 io.on('connection', function (socket) {
   socket.on('pingServer', function(data) {
-    socket.emit('pong', data);
+    console.log('receive', data);
+    socket.emit('latency', data);
   });
 });
+
+
+function onConnection(socket) {
+
+}
