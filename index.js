@@ -9,13 +9,7 @@ app.get('/', function (req, res) {
 });
 
 io.on('connection', function (socket) {
-  socket.on('pingServer', function(data) {
-    console.log('receive', data);
-    socket.emit('latency', data);
+  socket.on('latency', function(data) {
+    socket.emit('giveBack', data);
   });
 });
-
-
-function onConnection(socket) {
-
-}
