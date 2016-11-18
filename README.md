@@ -1,4 +1,4 @@
-# ping-server
+# Node Ping Server
 NodeJS server to calculate the approximate ping from the browser to any server using web-sockets. 
 
 # Aclaration
