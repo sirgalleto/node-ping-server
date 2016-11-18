@@ -14,7 +14,7 @@ This is not a perfect ping calculation but I came to a good approximation improv
 # Usage
   
   1. Run the service `$ npm start`.
-  3. Create a socket connection to port 3500 *you can change the port creating a env var called SOCKET_PORT*
+  3. Create a socket connection to port 3500 *(you can change the port creating a env var called SOCKET_PORT)*
   2. Emit a `ping2` event.
   3. Receive a `pong2` event.
   4. Calculate the events interval.
