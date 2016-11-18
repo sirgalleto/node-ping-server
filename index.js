@@ -1,4 +1,4 @@
-var app = require('express')();
+;var app = require('express')();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
@@ -9,7 +9,7 @@ app.get('/', function (req, res) {
 });
 
 io.on('connection', function (socket) {
-  socket.on('ping2', function(data) {
-    socket.emit('pong2', data);
+  socket.on('Ping', function(data) {
+    socket.emit('Pong', data);
   });
 });
