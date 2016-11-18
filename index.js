@@ -2,7 +2,7 @@ var app = require('express')();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
-server.listen(process.env.PORT || 3500);
+server.listen(process.env.SOCKET_PORT || 3500);
 
 app.get('/', function (req, res) {
   res.send('Online');
