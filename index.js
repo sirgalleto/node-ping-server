@@ -9,7 +9,7 @@ app.get('/', function (req, res) {
 });
 
 io.on('connection', function (socket) {
-  socket.on('latency', function(data) {
-    socket.emit('giveBack', data);
+  socket.on('ping2', function(data) {
+    socket.emit('pong2', data);
   });
 });
